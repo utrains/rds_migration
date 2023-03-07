@@ -68,11 +68,11 @@ variable "common_tags" {
   }
 }
 
-variable "common_tags_trialmax" {
+variable "common_tags_retail" {
   type        = map(any)
   description = "A tagging scheme"
   default = {
-    application = "trialmax"
+    application = "retail"
     costcenter  = "21000"
     stack_name  = "tm-db"
     creator     = "terraform v. 1.0.9"
@@ -82,8 +82,8 @@ variable "common_tags_trialmax" {
     environment = "dev"
     expiration  = "01/01/2030"
     jira        = "CITA-1357"
-    partner     = "trialmax"
-    poc         = "Bracket_Engineering_DevOps@signanthealth.com:"
+    partner     = "retail"
+    poc         = "DevOps_team@utrains.org:"
     public      = "false"
     supporting  = "shared"
   }
